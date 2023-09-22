@@ -1,0 +1,36 @@
+spring:
+   application:
+       name: Gestionstagaires
+   datasource:
+           url: jdbc:mysql://localhost:3306/GestionDB?createDatabaseIfNotExist=true
+           driver-class-name: com.mysql.cj.jdbc.Driver
+           password: ''
+           username: root
+   jpa:
+     defer-datasource-initialization: true
+     hibernate:
+        ddl-auto: none
+     properties:
+      dialect: org.hibernate.dialect.MariaDBDialect
+      show-sql: true
+   sql:
+     init:
+       mode: always
+  # datasource:
+   #     driverClassName: org.h2.Driver
+    #    password: ''
+     #   url: jdbc:h2:mem:GestionDB
+      #  username: sa
+   #h2:
+    #      console:
+     #      enabled: true
+      #     path: /h2-console
+ #  jpa:
+  #      database-platform: org.hibernate.dialect.H2Dialect
+   #     defer-datasource-initialization: true
+    #    hibernate:
+     #    ddl-auto: create
+
+jwt:
+   secret: '"61D62DBFD4442B551C8F793F24E326C5F789ACC17F222E89186C62F78F3C7B8B"'
+
